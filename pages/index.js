@@ -1,7 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
+import Featured from "../components/Featured";
+import RecentlyViewed from "../components/RecentlyViewed";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -12,16 +16,20 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <p>Main</p>
-				<Link href="/signup/signup" >Signup</Link>
-				<Link href="/signin/signin" >Sign In</Link>
-				<Link href="/shoppingcart/mycart" >My Cart</Link>
-				<Link href="/products/all/allproducts" >All Products</Link>
+        <nav>
+          <Header />
+        </nav>
+        <div>
+          <Featured />
+        </div>
+				<div>
+					<RecentlyViewed />
+				</div>
       </main>
 
       <footer className={styles.footer}>
-				<p>Footer</p>
+        <Footer />
       </footer>
     </div>
-  )
+  );
 }
