@@ -1,13 +1,36 @@
-.navWrapper{
-	.navBar{
-		.navToggle{
+.navWrapper {
+  .navBar {
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      background-color: yellow;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: black;
+      }
+    }
+    .menuNav {
+      display: none;
+    }
+    .showMenu {
+    }
+  }
+}
 
-		}
-		.menuNav{
-			display: none;
-		}
-		.showMenu{
-
-		}
-	}
+.materialIcons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
