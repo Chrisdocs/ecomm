@@ -16,9 +16,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <nav>
-          <Header />
-        </nav>
         <div>
           <Featured />
         </div>
